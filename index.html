@@ -1,6 +1,83 @@
-<table border="1">
-    <tr><th>Nome</th><th>Idade</th><th>Cidade</th></tr>
-    <tr><td>Maria</td><td>25</td><td>São Paulo</td></tr>
-    <tr><td>João</td><td>30</td><td>Rio de Janeiro</td></tr>
-    <tr><td>Ana</td><td>22</td><td>Belo Horizonte</td></tr>
-  </table>
+<!doctype html>
+<header>
+<div class="nav">
+<div class="brand">Dudu Viagem</div>
+<nav>
+<a href="#home">Início</a> |
+<a href="#destinos">Destinos</a> |
+<a href="#pacotes">Pacotes</a> |
+<a href="#sobre">Sobre</a> |
+<a href="#contato">Contato</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section id="home" class="hero">
+<div style="flex:1">
+<h1 style="margin:0;font-size:28px">Viaje fácil com <strong>Dudu Viagem</strong></h1>
+<p>Oferecemos pacotes personalizados, suporte 24/7 e as melhores rotas. Reserve agora e ganhe desconto!</p>
+<p><a class="btn" href="#pacotes">Ver Pacotes</a> <a href="https://www.google.com/travel" target="_blank" rel="noopener">Buscar voos</a></p>
+</div>
+<div style="flex:1;min-height:140px"></div>
+</section>
+
+
+<section id="destinos" style="margin-top:26px">
+<h2>Destinos Populares</h2>
+<div class="cards">
+<article class="card">
+<h3>Fernando de Noronha</h3>
+<p>Praias paradisíacas, mergulho e natureza protegida.</p>
+<p><a href="#pacotes" class="btn">Escolher</a></p>
+</article>
+<article class="card">
+<h3>Gramado</h3>
+<p>Clima europeu, gastronomia e festas o ano todo.</p>
+<p><a href="#pacotes" class="btn">Escolher</a></p>
+</article>
+<article class="card">
+<h3>Rio de Janeiro</h3>
+<p>Praias, vida noturna e pontos turísticos icônicos.</p>
+<p><a href="#pacotes" class="btn">Escolher</a></p>
+</article>
+</div>
+</section>
+
+
+<section id="pacotes" style="margin-top:28px">
+<h2>Pacotes</h2>
+<div class="cards">
+<div class="card"><h3>Pacote Econômico</h3><p>3 dias / 2 noites - Hotel 3★ - Café incluso</p><p><a href="mailto:contato@duduviagem.com?subject=Reserva%20Pacote%20Econ%C3%B4mico">Solicitar</a></p></div>
+<div class="card"><h3>Pacote Romântico</h3><p>4 dias / 3 noites - Hotel 4★ - Jantar especial</p><p><a href="mailto:contato@duduviagem.com?subject=Reserva%20Pacote%20Rom%C3%A2ntico">Solicitar</a></p></div>
+<div class="card"><h3>Pacote Aventura</h3><p>5 dias / 4 noites - Trilhas e esportes</p><p><a href="mailto:contato@duduviagem.com?subject=Reserva%20Pacote%20Aventura">Solicitar</a></p></div>
+</div>
+</section>
+
+
+<section id="sobre" style="margin-top:28px">
+<h2>Sobre Dudu Viagem</h2>
+<p>Dudu Viagem é uma agência de viagens focada em experiências personalizadas. Trabalhamos com parceiros locais para oferecer segurança e suporte antes, durante e depois da viagem.</p>
+<p>Veja também nossas redes: <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> • <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></p>
+</section>
+
+
+<section id="contato" style="margin-top:28px">
+<h2>Contato</h2>
+<form action="mailto:contato@duduviagem.com" method="post" enctype="text/plain">
+<input type="text" name="nome" placeholder="Seu nome" required>
+<input type="email" name="email" placeholder="Seu e-mail" required>
+<textarea name="mensagem" rows="4" placeholder="Mensagem"></textarea>
+<p><button type="submit" class="btn">Enviar</button></p>
+</form>
+<p>Ou ligue: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+</section>
+</main>
+
+
+<footer>
+<small>© <strong>Dudu Viagem</strong> • <a href="#home">Voltar ao topo</a> • <a href="privacy.html">Política de Privacidade</a></small>
+</footer>
+</body>
+</html>
