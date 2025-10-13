@@ -3,88 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tabela Giratória 3D</title>
+<title>Tabela Circular Interativa</title>
 <style>
   body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #001f3f, #000);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: radial-gradient(circle, #001f3f, #000);
-    font-family: Arial, sans-serif;
     perspective: 1000px;
-    color: white;
+    font-family: Arial, sans-serif;
   }
 
-  .tabela3d {
-    width: 500px;
-    transform-style: preserve-3d;
-    animation: girar 10s infinite linear;
-  }
-
-  table {
+  /* Fundo animado de estrelas */
+  .estrelas {
+    position: absolute;
     width: 100%;
-    border-collapse: collapse;
-    transform: rotateY(0deg) translateZ(0);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: moverEstrelas 100s linear infinite;
+    z-index: 0;
   }
 
-  th, td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  @keyframes moverEstrelas {
+    from { background-position: 0 0; }
+    to { background-position: 10000px 10000px; }
   }
 
-  th {
-    background: rgba(0, 188, 212, 0.5);
-    text-transform: uppercase;
-  }
-
-  tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.05);
+  /* Tabela circular */
+  .tabela-circular {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,188,212,0.3), rgba(63,81,181,0.7));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0,188,212,0.6);
+    animation: girar 20s linear infinite;
+    transform-style: preserve-3d;
+    z-index: 1;
   }
 
   @keyframes girar {
     from { transform: rotateY(0deg); }
     to { transform: rotateY(360deg); }
   }
+
+  table {
+    border-collapse: collapse;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    width: 260px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  th {
+    background: rgba(0,188,212,0.5);
+    text-transform: uppercase;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  h1 {
+    position: absolute;
+    top: 20px;
+    color: white;
+    font-size: 28px;
+    text-shadow: 0 0 10px cyan;
+  }
 </style>
 </head>
 <body>
 
-<div class="tabela3d">
+<div class="estrelas"></div>
+
+<h1>Dudu Viagem Galáctica ✨</h1>
+
+<div class="tabela-circular">
   <table>
     <thead>
-      <tr>
-        <th>Destino</th>
-        <th>Duração</th>
-        <th>Preço</th>
-      </tr>
+      <tr><th>Destino</th><th>Dias</th><th>Preço</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Fernando de Noronha</td>
-        <td>5 dias</td>
-        <td>R$ 3.500</td>
-      </tr>
-      <tr>
-        <td>Gramado</td>
-        <td>4 dias</td>
-        <td>R$ 2.800</td>
-      </tr>
-      <tr>
-        <td>Rio de Janeiro</td>
-        <td>3 dias</td>
-        <td>R$ 2.000</td>
-      </tr>
-      <tr>
-        <td>Paris</td>
-        <td>7 dias</td>
-        <td>R$ 9.900</td>
-      </tr>
+      <tr><td>Marte</td><td>7</td><td>R$ 99.000</td></tr>
+      <tr><td>Lua</td><td>5</td><td>R$ 55.000</td></tr>
+      <tr><td>Saturno</td><td>10</td><td>R$ 120.000</td></tr>
+      <tr><td>Vênus</td><td>6</td><td>R$ 85.000</td></tr>
     </tbody>
   </table>
 </div>
