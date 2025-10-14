@@ -1,64 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brasileirão 2025</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileirão Série A - ge.globo.com</title>
+    <link rel="stylesheet" href="https://ge.globo.com/futebol/brasileirao-serie-a/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00a859;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .ranking, .artilharia {
+            margin-top: 20px;
+        }
+        .ranking table, .artilharia table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .ranking th, .artilharia th, .ranking td, .artilharia td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .ranking th, .artilharia th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Campeonato Brasileiro 2025</h1>
+<header>
+    <h1>Brasileirão Série A 2025</h1>
+</header>
 
-<h2>Tabela de Classificação</h2>
-<table border="1" cellpadding="5" cellspacing="0">
-  <tr>
-    <th>Posição</th>
-    <th>Time</th>
-    <th>Pontos</th>
-  </tr>
-  <tr><td>1</td><td>Palmeiras</td><td>58</td></tr>
-  <tr><td>2</td><td>Flamengo</td><td>55</td></tr>
-  <tr><td>3</td><td>Cruzeiro</td><td>52</td></tr>
-  <tr><td>4</td><td>Mirassol</td><td>46</td></tr>
-  <tr><td>5</td><td>Botafogo</td><td>43</td></tr>
-  <tr><td>6</td><td>Bahia</td><td>43</td></tr>
-  <tr><td>7</td><td>Fluminense</td><td>38</td></tr>
-  <tr><td>8</td><td>São Paulo</td><td>38</td></tr>
-  <tr><td>9</td><td>Red Bull Bragantino</td><td>36</td></tr>
-  <tr><td>10</td><td>Ceará</td><td>34</td></tr>
-  <tr><td>11</td><td>Vasco da Gama</td><td>33</td></tr>
-  <tr><td>12</td><td>Corinthians</td><td>33</td></tr>
-  <tr><td>13</td><td>Grêmio</td><td>33</td></tr>
-  <tr><td>14</td><td>Atlético Mineiro</td><td>32</td></tr>
-  <tr><td>15</td><td>Internacional</td><td>32</td></tr>
-  <tr><td>16</td><td>Santos</td><td>28</td></tr>
-  <tr><td>17</td><td>Vitória</td><td>25</td></tr>
-  <tr><td>18</td><td>Fortaleza</td><td>24</td></tr>
-</table>
+<div class="container">
+    <section class="ranking">
+        <h2>Classificação</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Time</th>
+                    <th>Jogos</th>
+                    <th>Vitórias</th>
+                    <th>Empates</th>
+                    <th>Derrotas</th>
+                    <th>Gols</th>
+                    <th>Saldo de Gols</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de linha de classificação -->
+                <tr>
+                    <td>1</td>
+                    <td>Flamengo</td>
+                    <td>38</td>
+                    <td>25</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>78</td>
+                    <td>+30</td>
+                    <td>83</td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </section>
 
-<h2>Imagens dos Times</h2>
-<p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Palmeiras_logo_2012.svg/120px-Palmeiras_logo_2012.svg.png" alt="Palmeiras">
-  <img src="https://share.google/images/zXez8sVAspDDI02d9" alt="Flamengo">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Logo_Cruzeiro_Esporte_Clube.svg/120px-Logo_Cruzeiro_Esporte_Clube.svg.png" alt="Cruzeiro">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Botafogo_FR_logo.svg/120px-Botafogo_FR_logo.svg.png" alt="Botafogo">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Fluminense_FC_logo.svg/120px-Fluminense_FC_logo.svg.png" alt="Fluminense">
-</p>
+    <section class="artilharia">
+        <h2>Artilharia</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogador</th>
+                    <th>Time</th>
+                    <th>Gols</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de linha de artilharia -->
+                <tr>
+                    <td>Kaio Jorge</td>
+                    <td>Cruzeiro</td>
+                    <td>15</td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </section>
+</div>
 
-<h2>Próximos Jogos</h2>
-<ul>
-  <li>16/10/2025 - Palmeiras x Red Bull Bragantino</li>
-  <li>16/10/2025 - Botafogo x Flamengo</li>
-  <li>16/10/2025 - Mirassol x Internacional</li>
-  <li>16/10/2025 - Sport Recife x Ceará</li>
-  <li>16/10/2025 - Santos x Corinthians</li>
-  <li>16/10/2025 - Atlético-MG x Cruzeiro</li>
-  <li>17/10/2025 - Grêmio x São Paulo</li>
-  <li>17/10/2025 - Fluminense x Juventude</li>
-  <li>17/10/2025 - Vitória x Bahia</li>
-</ul>
-
-<p>Fonte: <a href="https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2025?doc=Tabela+Detalhada" target="_blank">CBF</a></p>
+<footer>
+    <p>&copy; 2025 ge.globo.com - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>
