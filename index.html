@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário Simples</title>
-<style>
-  body { font-family: Arial; background: linear-gradient(90deg, #00a884, #0077b6); color: #fff; text-align: center; padding: 30px; }
-  a { color: #fff; background: #0077b6; padding: 10px 20px; border-radius: 10px; text-decoration: none; }
-  form { display: none; background: #fff; color: #000; margin: 20px auto; padding: 20px; border-radius: 10px; width: 300px; }
-  #form:target { display: block; }
-  input, select { width: 90%; padding: 8px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; }
-  button { background: #00a884; color: #fff; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Simples</title>
 </head>
 <body>
 
-<h2>Bem-vindo</h2>
-<p>Clique no link abaixo para abrir o formulário:</p>
-<a href="#form">input</a>
+  <h2>Bem-vindo</h2>
+  <p><a href="#form">input</a></p>
 
-<div id="form">
-  <h3>Preencha seus dados</h3>
-  <form>
-    <input type="text" placeholder="Nome completo" required><br>
-    <input type="email" placeholder="Email" required><br>
-    <input type="password" placeholder="Senha" required><br>
-    <input type="password" placeholder="Confirmar senha" required><br>
-    <input type="tel" placeholder="Telefone"><br>
-    <input type="date" required><br>
-    <select required>
-      <option value="">Selecione o país</option>
-      <option>Brasil</option>
-      <option>Portugal</option>
-      <option>Estados Unidos</option>
-    </select><br><br>
-    <button type="submit">Enviar</button>
-  </form>
-  <p><a href="#">Fechar</a></p>
-</div>
+  <div id="form">
+    <h3>Preencha seus dados</h3>
+    <form>
+      <label>Nome: <input type="text" required></label><br><br>
+      <label>Email: <input type="email" required></label><br><br>
+      <label>Senha: <input type="password" required></label><br><br>
+      <label>Confirmar senha: <input type="password" required></label><br><br>
+      <label>Telefone: <input type="tel"></label><br><br>
+      <label>Data de nascimento: <input type="date" required></label><br><br>
+      <label>País:
+        <select required>
+          <option value="">Selecione</option>
+          <option>Brasil</option>
+          <option>Portugal</option>
+          <option>Estados Unidos</option>
+        </select>
+      </label><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+    <p><a href="#">Fechar</a></p>
+  </div>
 
 </body>
 </html>
