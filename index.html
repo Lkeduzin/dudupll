@@ -1,126 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brasileirão Série A - ge.globo.com</title>
-    <link rel="stylesheet" href="https://ge.globo.com/futebol/brasileirao-serie-a/">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #00a859;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 90%;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        .ranking, .artilharia {
-            margin-top: 20px;
-        }
-        .ranking table, .artilharia table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .ranking th, .artilharia th, .ranking td, .artilharia td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .ranking th, .artilharia th {
-            background-color: #f2f2f2;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ficha de Anamnese - Clínica TecnoVida</title>
+  <style>
+    /* Estilo simples para legibilidade — pode remover/ajustar */
+    body { font-family: Arial, sans-serif; background:#f7f9fb; color:#222; padding:20px; }
+    form { background:#fff; padding:18px; border-radius:8px; max-width:900px; margin:0 auto; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+    fieldset { border:1px solid #d6e0ea; padding:12px 16px; margin-bottom:14px; border-radius:6px; }
+    legend { font-weight:700; padding:0 8px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    .field { flex:1 1 220px; display:flex; flex-direction:column; margin-bottom:8px; min-width:160px; }
+    label { font-size:0.95rem; margin-bottom:6px; }
+    input[type="text"], input[type="email"], input[type="date"], input[type="number"], textarea, select {
+      padding:8px; border-radius:6px; border:1px solid #cbd7e6; font-size:0.95rem;
+    }
+    textarea { min-height:84px; resize:vertical; }
+    .inline { display:flex; align-items:center; gap:8px; }
+    .help { font-size:0.82rem; color:#5b6b76; margin-top:6px; }
+    button[type="submit"] { padding:10px 16px; border-radius:8px; border:none; background:#0077cc; color:#fff; font-weight:700; cursor:pointer; }
+    .small { font-size:0.85rem; color:#55666f; }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Brasileirão Série A 2025</h1>
-</header>
+  <h1>Ficha de Anamnese — Clínica TecnoVida</h1>
+  <form action="#" method="post" novalidate>
+    <!-- Seção 1: Dados Pessoais (5 campos) -->
+    <fieldset>
+      <legend>Dados Pessoais</legend>
 
-<div class="container">
-    <section class="ranking">
-        <h2>Classificação</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Posição</th>
-                    <th>Time</th>
-                    <th>Jogos</th>
-                    <th>Vitórias</th>
-                    <th>Empates</th>
-                    <th>Derrotas</th>
-                    <th>Gols</th>
-                    <th>Saldo de Gols</th>
-                    <th>Pontos</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Exemplo de linha de classificação -->
-                <tr>
-                    <td>1</td>
-                    <td>Flamengo</td>
-                    <td>38</td>
-                    <td>25</td>
-                    <td>8</td>
-                    <td>5</td>
-                    <td>78</td>
-                    <td>+30</td>
-                    <td>83</td>
-                </tr>
-                <!-- Adicione mais linhas conforme necessário -->
-            </tbody>
-        </table>
-    </section>
+      <div class="row">
+        <!-- 1 Nome Completo -->
+        <div class="field">
+          <label for="nome">Nome Completo <span class="small">(*)</span></label>
+          <input id="nome" name="nome" type="text" placeholder="Ex: Maria da Silva" required />
+        </div>
 
-    <section class="artilharia">
-        <h2>Artilharia</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Jogador</th>
-                    <th>Time</th>
-                    <th>Gols</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Exemplo de linha de artilharia -->
-                <tr>
-                    <td>Kaio Jorge</td>
-                    <td>Cruzeiro</td>
-                    <td>15</td>
-                </tr>
-                <!-- Adicione mais linhas conforme necessário -->
-            </tbody>
-        </table>
-    </section>
-</div>
+        <!-- 2 Data de Nascimento -->
+        <div class="field">
+          <label for="nascimento">Data de Nascimento <span class="small">(*)</span></label>
+          <input id="nascimento" name="nascimento" type="date" required />
+        </div>
 
-<footer>
-    <p>&copy; 2025 ge.globo.com - Todos os direitos reservados</p>
-</footer>
+        <!-- 3 Gênero (select para variar) -->
+        <div class="field">
+          <label for="genero">Gênero</label>
+          <select id="genero" name="genero" aria-label="Gênero">
+            <option value="">-- selecione --</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="nao-binario">Não-binário</option>
+            <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+          </select>
+        </div>
+
+        <!-- 4 CPF (type="number" conforme solicitado) -->
+        <div class="field">
+          <label for="cpf">CPF (apenas dígitos)</label>
+          <input id="cpf" name="cpf" type="number" inputmode="numeric" placeholder="Somente números" 
+                 title="Use somente dígitos. Em um sistema real, idealmente validar com máscara/pattern." />
+          <div class="help">OBS: <em>type="number"</em> usado por solicitação — em produção recomenda-se máscara/pattern para manter zeros à esquerda.</div>
+        </div>
+
+        <!-- 5 E-mail -->
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="exemplo@dominio.com" />
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Seção 2: Histórico de Saúde (5 campos) -->
+    <fieldset>
+      <legend>Histórico de Saúde</legend>
+
+      <div class="row">
+        <!-- 6 Possui alguma doença crônica? (radio: Sim/Não) -->
+        <div class="field">
+          <label>Possui alguma doença crônica? <span class="small">(*)</span></label>
+          <div class="inline" role="radiogroup" aria-labelledby="doenca-cronica-label">
+            <label><input type="radio" name="doenca_cronica" value="sim" required> Sim</label>
+            <label><input type="radio" name="doenca_cronica" value="nao"> Não</label>
+          </div>
+          <div class="help">Escolha apenas uma opção (mesmo <code>name</code> para as duas).</div>
+        </div>
+
+        <!-- 7 Quais medicamentos (textarea) -->
+        <div class="field" style="flex-basis:100%;">
+          <label for="medicamentos">Quais medicamentos você utiliza regularmente?</label>
+          <textarea id="medicamentos" name="medicamentos" placeholder="Liste medicação e dosagem, se souber..."></textarea>
+        </div>
+
+        <!-- 8 Você fuma? (checkbox único para 'Sim') -->
+        <div class="field">
+          <label>Fuma?</label>
+          <div class="inline">
+            <input id="fuma" name="fuma" type="checkbox" value="sim">
+            <label for="fuma">Sim — marco se aplica</label>
+          </div>
+          <div class="help">Se desmarcado, entende-se que a resposta é 'Não'.</div>
+        </div>
+
+        <!-- 9 Altura (cm) -->
+        <div class="field">
+          <label for="altura">Altura (em cm)</label>
+          <input id="altura" name="altura" type="number" min="30" max="300" placeholder="Ex: 175" />
+        </div>
+
+        <!-- 10 Peso (kg) -->
+        <div class="field">
+          <label for="peso">Peso (em kg)</label>
+          <input id="peso" name="peso" type="number" min="2" max="500" step="0.1" placeholder="Ex: 72.5" />
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Seção 3: Detalhes da Consulta (5 campos) -->
+    <fieldset>
+      <legend>Detalhes da Consulta</legend>
+
+      <div class="row">
+        <!-- 11 Principal motivo da consulta (textarea menor) -->
+        <div class="field" style="flex-basis:100%;">
+          <label for="motivo">Qual é o principal motivo da sua consulta?</label>
+          <textarea id="motivo" name="motivo" placeholder="Descreva brevemente o problema/sintomas..." rows="4"></textarea>
+        </div>
+
+        <!-- 12 Frequência de exercícios (select) -->
+        <div class="field">
+          <label for="exercicio">Com que frequência pratica exercícios físicos?</label>
+          <select id="exercicio" name="exercicio">
+            <option value="">-- selecione --</option>
+            <option value="diariamente">Diariamente</option>
+            <option value="semanalmente">Semanalmente</option>
+            <option value="raramente">Raramente</option>
+            <option value="nunca">Nunca</option>
+          </select>
+        </div>
+
+        <!-- 13 Data da Última Consulta -->
+        <div class="field">
+          <label for="ultima_consulta">Data da Última Consulta (aproximada)</label>
+          <input id="ultima_consulta" name="ultima_consulta" type="date" />
+        </div>
+
+        <!-- 14 Prefere ser contatado por (radio: Telefone, E-mail) -->
+        <div class="field">
+          <label>Prefere ser contatado por?</label>
+          <div class="inline" role="radiogroup" aria-labelledby="contato-pref-label">
+            <label><input type="radio" name="contato_pref" value="telefone" required> Telefone</label>
+            <label><input type="radio" name="contato_pref" value="email"> E-mail</label>
+          </div>
+        </div>
+
+        <!-- 15 Botão de Envio -->
+        <div class="field" style="align-self:flex-end;">
+          <label style="visibility:hidden;">Enviar</label>
+          <button type="submit">Enviar ficha</button>
+        </div>
+      </div>
+    </fieldset>
+
+    <p class="small">Ao enviar, confirme que as informações fornecidas são verdadeiras. Em ambiente real, integraríamos esse formulário com validação no servidor e controle de segurança (HTTPS, proteção de dados, etc.).</p>
+  </form>
 
 </body>
 </html>
